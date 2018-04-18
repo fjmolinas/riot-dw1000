@@ -47,17 +47,17 @@ extern "c" {
 /**
  * @brief DW1000 SPI Instance Configuration
  */
-#define DW1000_SPI_CFG_INSTANCE         (1U)
+#define DW1000_SPI_CFG_INSTANCE         (0U)
 
 /**
  * @brief DW1000 Reset Configuration
  */
-#define DW1000_RSTn                     GPIO_PIN(0, 2)
+#define DW1000_RSTn                     GPIO_PIN(0, 21)
 
 /**
  * @brief DW1000 Interrupt Configuration
  */
-#define DECAIRQ                         (30U)
+#define DECAIRQ                         (19U)
 
 /**
  * @brief SPI Configuration for Mode, Clock, Chip Select and SPI Instance
@@ -66,7 +66,7 @@ extern "c" {
 #define DW1000_SPI_MODE                 SPI_MODE_0
 #define DW1000_SPI_HIGH                 SPI_CLK_5MHZ
 #define DW1000_SPI_LOW                  SPI_CLK_1MHZ
-#define DW1000_SPI_CS                   (29U)
+#define DW1000_SPI_CS                   (17U)
 #define DW1000_SPI_DEV                  DW1000_SPI_CFG_INSTANCE
 /** @} */
 
